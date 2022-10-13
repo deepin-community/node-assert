@@ -1,0 +1,29 @@
+Source: node-assert
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-babel7
+ , node-object-assign <!nocheck>
+ , node-tape <!nocheck>
+ , node-util (>= 0.12~) <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-assert
+Vcs-Git: https://salsa.debian.org/js-team/node-assert.git
+Homepage: https://github.com/defunctzombie/commonjs-assert
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-assert
+Architecture: all
+Depends: ${misc:Depends}
+ , node-object-assign
+ , node-util (>= 0.12~)
+Description: simple assertion library for javascript
+ This module is used for writing unit tests for your applications, you can
+ access it with require('assert').
+ .
+ The API is derived from the commonjs 1.0 unit testing spec and the node.js
+ assert module

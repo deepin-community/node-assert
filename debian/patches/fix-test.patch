@@ -1,0 +1,16 @@
+Description: disable one test
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2021-11-06
+
+--- a/test.js
++++ b/test.js
+@@ -8,7 +8,7 @@
+ 
+ const testPaths = [
+   ['test-assert-async.js', () => require('./test/parallel/test-assert-async.js')],
+-  ['test-assert-checktag.js', () => require('./test/parallel/test-assert-checktag.js')],
++  //['test-assert-checktag.js', () => require('./test/parallel/test-assert-checktag.js')],
+   ['test-assert-deep.js', () => require('./test/parallel/test-assert-deep.js')],
+   ['test-assert-fail-deprecation.js', () => require('./test/parallel/test-assert-fail-deprecation.js')],
+   ['test-assert-fail.js', () => require('./test/parallel/test-assert-fail.js')],

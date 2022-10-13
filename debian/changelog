@@ -1,0 +1,49 @@
+node-assert (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * Embed array-fill and object.entries for test only
+  * Build with babeljs
+  * Update test
+  * Update dependencies:
+    + require node-util ≥ 0.12
+    + build depends on node-babel7
+    + test depends on node-tape
+
+ -- Yadd <yadd@debian.org>  Sun, 07 Nov 2021 00:15:12 +0100
+
+node-assert (1.5.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 1.5.0
+  * Add dependency to node-object-assign
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 24 Dec 2020 11:13:22 +0100
+
+node-assert (1.4.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Update VCS fields to salsa
+  * Use pkg-js-tools auto install
+  * Enable upstream test using mocha
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 19 Feb 2020 15:51:05 +0100
+
+node-assert (1.4.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #818188)
+
+ -- Sruthi Chandran <srud@disroot.org>  Wed, 12 Oct 2016 14:28:13 +0530

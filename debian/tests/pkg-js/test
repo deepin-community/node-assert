@@ -1,0 +1,2 @@
+#babeljs test --out-dir build/test
+tape test.js
