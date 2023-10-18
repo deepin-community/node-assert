@@ -2,6 +2,9 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: assert
 Upstream-Contact: https://github.com/defunctzombie/commonjs-assert/issues
 Source: https://github.com/defunctzombie/commonjs-assert
+ https://github.com/rubennorte/es6-object-assign/tags
+ https://github.com/es-shims/is-nan/tags
+Files-Excluded-es6-object-assign: dist
 
 Files: *
 Copyright: Joyent, Inc. and other Node contributors
@@ -10,10 +13,12 @@ License: Expat
 Files: assert.js
 Copyright: Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
 License: Expat
+Comment: Originally from narwhal.js (http://narwhaljs.org)
+ Copyright: 2009 Thomas Robinson <280north.com>
 
 Files: debian/*
 Copyright: 2016 Sruthi Chandran <srud@disroot.org>
- 2021 Yadd <yadd@debian.org>
+ 2021-2022 Yadd <yadd@debian.org>
 License: Expat
 
 Files: debian/tests/test_modules/array-fill/*
@@ -22,6 +27,18 @@ License: Expat
 
 Files: debian/tests/test_modules/object.entries/*
 Copyright: 2015 Jordan Harband
+License: Expat
+
+Files: es6-object-assign/*
+Copyright: Rubén Norte <rubennorte@gmail.com>
+License: Expat
+
+Files: is-nan/*
+Copyright: 2014 Jordan Harband
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
