@@ -11,3 +11,7 @@ override_dh_auto_build:
 	babeljs assert.js --out-dir build
 	#babeljs test.js --out-dir build
 	babeljs internal --out-dir build/internal
+
+override_dh_installdocs:
+	dh_installdocs
+	dh_nodejs_autodocs

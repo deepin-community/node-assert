@@ -2,4 +2,21 @@ version=4
 opts=\
 dversionmangle=auto,\
 filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-assert-$1/ \
- https://github.com/defunctzombie/commonjs-assert/tags .*/archive/.*/v?([\d\.]+).tar.gz
+ https://github.com/defunctzombie/commonjs-assert/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=es6-object-assign,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-es6-object-assign-$1/ \
+ https://github.com/rubennorte/es6-object-assign/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=is-nan,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-is-nan-$1/ \
+ https://github.com/es-shims/is-nan/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts="searchmode=plain,component=types-assert,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-assert-$1/" \
+ https://registry.npmjs.org/@types/assert https://registry.npmjs.org/@types/assert/-/assert-([\d\.]+)@ARCHIVE_EXT@ checksum
